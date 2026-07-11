@@ -38,7 +38,7 @@ The concrete construction is to consider $0\leq X_1\leq X_2 \leq \cdots \rightar
 
 Note that even if $X$ is finite a.s., its condition expectation can equal to $+\infty$ a.s..
 
-Generally, the conditioning on a variable $X$ is somewhat taking its average value on every set of points which can't be distinguished by $\B$. When $\B$ is induced by another random variable $Y$, we denote the conditioning by $\E(X\vert Y)$. In fact, there is a unique (in a.e. sense) Borel function $f$ that $\E(X\vert Y) = f(Y)$, according to the following lemma, whose proof is fully measure-theoretic and technique:
+Generally, the conditioning on a variable $X$ is somewhat taking its average value on every set of points which can't be distinguished by $\B$. When $\B$ is induced by another random variable $Y$, we denote the conditioning by $\E(X\vert Y)$. In fact, there is a unique (in a.e. sense) Borel function $f$ that $\E(X\vert Y) = f(Y)$, according to the following lemma, whose proof is fully measure-theoretic and technical:
 
 **Lem.3 (Doob-Dynkin)** Suppose that $T: \Omega \rightarrow (\Omega', \mathscr{M})$, where $(\Omega', \mathscr{M})$ is a space with its $\s$-algebra. We define the $\s$-algebra on $\Omega$ by $\sigma(T) := T^{-1}(\mathscr{M})$. Suppose $f: \Omega \rightarrow \mathbb{R}$. (We consider the Borel algebra instead of the Lebesgue one). Then,
 
