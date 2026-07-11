@@ -56,3 +56,6 @@ plugins:
 
 
 markdown: kramdown
+
+kramdown:
+  math_engine: null
