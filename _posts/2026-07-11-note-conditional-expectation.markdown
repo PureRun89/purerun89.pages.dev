@@ -26,7 +26,7 @@ $$
 
 To demonstrate this, we consider the measure on $(\Omega, \B)$ defined by $B \mapsto \int_B X \P(d\omega)$, which is a signed measure controlled by $\P$. By the Radon-Nikodym theorem, there exists a $\B$-measurable function $f$ that the measure defined above is $f \cdot \P$. We denote $\E(X \vert \B) = f$, and the statement above can be proved by approximating $Z$ with sums of characteristic functions $1_B$.
 
-For arbitrary $X \in L^1$, it suffices to decompose $X$ into its positive and negative parts, and go through the same proof. The uniqueness of $\E(X \vert B)$ easily follows. $\square$
+For arbitrary $X \in L^1$, it suffices to decompose $X$ into its positive and negative parts, and go through the same proof. The uniqueness of $\E(X \vert \B)$ easily follows. $\square$
 
 **Def.2 (Conditioning of nonnegative variable)** Given a random variable $X \geq 0$ and $\s$-algebra $\B$, we can define the nonnegative $\B$-measurable variable $\E(X\vert \B)$ such that for any nonnegative $\B$-measurable random variable $Z$,
 
@@ -34,7 +34,7 @@ $$
 \E(XZ) = \E(\E(X\vert \B) Z). \square
 $$
 
-The concrete construction is to consider $0\leq X_1\leq X_2 \leq \cdots \rightarrow X$, such that each $X_i$ is bounded. Then $\E(X_i\vert B)$ converge to the demanded $\E(X\vert \B)$.
+The concrete construction is to consider $0\leq X_1\leq X_2 \leq \cdots \rightarrow X$, such that each $X_i$ is bounded. Then $\E(X_i\vert \B)$ converge to the demanded $\E(X\vert \B)$.
 
 Note that even if $X$ is finite a.s., its condition expectation can equal to $+\infty$ a.s..
 
@@ -48,12 +48,18 @@ Hence the conditioning of $X$ given another variable $Y$ is a variable $f(Y)$ wh
 
 **Prop.4** When $X$ is in $L^2$, the conditioning of $X$ can also be realized by orthogonal projection: $L^2(\A)$ is a Hilbert space, and $L^2(\B)$ is its closed subspace. By definition, for any $Z \in L^2(\B)$, $\E(Z (X - \E(X\vert \B))) = 0$, hence $\E(X\vert \B))$ is the orthogonal projection of $X$. $\square$
 
-The conditional variance is defined in a similar way of defining variance:
+Here are some other complementary definitions: the conditional variance and the conditional probability:
 
-**Def.5 (Conditional variance)** $X \in L^2$.
+**Def.5** For $X \in L^2$.
 
 $$
-Var(X\vert \B) := \E(X^2 \vert \B) - \E(X \vert B)^2. \square
+Var(X\vert \B) := \E(X^2 \vert \B) - \E(X \vert \B)^2.
+$$
+
+For an event $A$,
+
+$$
+\P(A \vert \B) := \E(1_A \vert \B). \square
 $$
 
 Now there are some general properties of conditioning:
