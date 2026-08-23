@@ -73,7 +73,7 @@ Now there are some general properties of conditioning:
 
 (Conditional expectation looks like expectation:)
 - $X_n \geq 0$, then $\E(\text{lim inf } X_n \vert \B) \leq \text{lim inf } \E(X_n \vert \B)$.
-- $f\geq 0$ convex, and $X \in L^1$, then $\E(f(X) \vert \B) \leq f(\E(X \vert \B))$. $\square$
+- $f\geq 0$ convex, and $X \in L^1$, then $\E(f(X) \vert \B) \geq f(\E(X \vert \B))$. $\square$
 
 
 **Prop.7 (Independence)** $\B_1$ and $\B_2$ are independent if and only if, for any $\B_2$-measurable positive variable $X$,
